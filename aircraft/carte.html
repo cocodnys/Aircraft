@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="icon" href="logopetit.png">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Accueil</title>
+</head>
+
+<style type="text/css">
+	@import url('https://fonts.googleapis.com/css2?family=Aleo&display=swap');
+	@import url('https://fonts.googleapis.com/css2?family=Aleo:wght@400;700&display=swap');
+	body{
+		margin: 0;
+    	padding: 0;
+    	margin-top: 120px;
+    	justify-content: center;
+    	display: flex;
+    	
+	}
+	header{
+		display: block;
+  		position: absolute;
+		top: 0;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+		background-color: white;
+		z-index: 3;
+
+		
+	}
+	header:after {
+    content: ""; /* This is necessary for the pseudo element to work. */ 
+    display: block; /* This will put the pseudo element on its own line. */
+    margin: 0 auto; /* This will center the border. */
+    width: 98%; /* Change this to whatever width you want. */
+    padding-top: 0px; /* This creates some space between the element and the border. */
+    border-bottom: 1px solid black; /* This creates the border. Replace black with whatever color you want. */
+	}
+	footer{
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		height: 80px; 
+		margin-left: auto;
+		margin-right: auto;
+		background-color: white;
+		z-index: 3;
+	}
+
+	footer p{
+		padding-top: ;
+		text-align: center;
+	}
+	hr{
+		border: none;
+	    border-top: 1px solid black;
+	    color: black;
+	    overflow: hidden;
+	    text-align: center;
+	    width: 98%;
+	}
+
+	.logo {
+		  	display: block;
+		  	margin-left: auto;
+		  	margin-right: auto;
+		  	height: 90px;
+		  	margin-top: 20px;
+		  	margin-bottom: 10px;
+		}
+
+	p.noms{
+		font-size: 15px;
+		margin-top: -15px;
+		padding-bottom: 20px;
+	}
+
+
+
+/* 
+
+bbox= -0,116729736328125 / -0,07905866672058 / +0,116729736328125 / -0,07905866672058
+
+toulouse : 43,604652 / 1,444209
+*/
+
+
+
+
+.menu{
+text-align: center;
+position: absolute;
+margin-top: 20px;
+
+}
+
+.menu{
+	display: flex;
+	flex-direction: column;
+
+
+}
+.sousmenu{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 10px;
+
+}
+.sousmenu input[type=search]{
+	font-family: Aleo;
+	padding-top: 3px;
+	border: 2px solid black;
+	border-radius: 10px;
+	height: 25px;
+	padding-left: 10px;
+
+}
+.sousmenu select{
+	font-family: Aleo;
+	font-weight: 400;
+	border: 2px solid black;
+	border-radius: 10px;
+	padding-left: 2px;
+	height: 25px;
+}
+
+.liste{
+	display: flex;
+	justify-content: space-between;
+	margin-top: -1px;
+
+	border-top: 1px solid black;
+
+
+}
+.liste table {
+	border-collapse: collapse;
+	margin-left: 10px;
+}
+
+
+.test{
+	border: 2px solid black;
+	border-radius: 10px;
+	max-height: 100px;
+	overflow: scroll;
+}
+
+.button{
+	margin-right: 10px;
+}
+
+</style>
+<body>
+	<header>
+		<img class="logo" src="logo.png">
+		
+	</header>
+
+<div class="menu">
+
+	<iframe width="500" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=1.327479263671875%2C43.52559333327942%2C1.560938736328125%2C43.68371066672058&amp;layer=mapnik&amp;marker=43.604652%2C1.444209" style="border: 1px solid black; border-radius: 10px;"></iframe><br>
+
+	<div class="sousmenu">
+
+		<select name="moteur">
+		    <option disabled selected>Type de moteur</option>
+			<option value="Essence">Essence</option>
+		    <option value="Electrique">Electrique</option>
+		</select>
+
+	<input type="search" name="rechercher" placeholder="Rechercher...">
+	</div>
+<div class="test">
+	<div class="liste">
+		<table>
+			<tr>
+		        <td>FD124F</td>
+		        <td>-</td>
+		        <td>Montauban</td>            
+		    </tr>
+		    
+		</table>
+
+		<div class="button">
+			<a href="#ville">Détails</a>
+			<a href="#ville">Géolocaliser</a>
+			<a href="#ville">Réserver</a>
+		</div>
+	</div>
+	<div class="liste">
+		<table>
+			<tr>
+		        <td>FD124F</td>
+		        <td>-</td>
+		        <td>Montauban</td>            
+		    </tr>
+		    
+		</table>
+
+		<div class="button">
+			<a href="#ville">Détails</a>
+			<a href="#ville">Géolocaliser</a>
+			<a href="#ville">Réserver</a>
+		</div>
+	</div>
+	<div class="liste">
+		<table>
+			<tr>
+		        <td>FD124F</td>
+		        <td>-</td>
+		        <td>Montauban</td>            
+		    </tr>
+		    
+		</table>
+
+		<div class="button">
+			<a href="#ville">Détails</a>
+			<a href="#ville">Géolocaliser</a>
+			<a href="#ville">Réserver</a>
+		</div>
+	</div>
+		<div class="liste">
+		<table>
+			<tr>
+		        <td>FD124F</td>
+		        <td>-</td>
+		        <td>Montauban</td>            
+		    </tr>
+		    
+		</table>
+
+		<div class="button">
+			<a href="#ville">Détails</a>
+			<a href="#ville">Géolocaliser</a>
+			<a href="#ville">Réserver</a>
+		</div>
+	</div>
+		<div class="liste">
+		<table>
+			<tr>
+		        <td>FD124F</td>
+		        <td>-</td>
+		        <td>Montauban</td>            
+		    </tr>
+		    
+		</table>
+
+		<div class="button">
+			<a href="#ville">Détails</a>
+			<a href="#ville">Géolocaliser</a>
+			<a href="#ville">Réserver</a>
+		</div>
+	</div>
+	<div class="liste">
+		<table>
+			<tr>
+		        <td>FD124F</td>
+		        <td>-</td>
+		        <td>Montauban</td>            
+		    </tr>
+		    
+		</table>
+
+		<div class="button">
+			<a href="#ville">Détails</a>
+			<a href="#ville">Géolocaliser</a>
+			<a href="#ville">Réserver</a>
+		</div>
+	</div>
+	<div class="liste">
+		<table>
+			<tr>
+		        <td>FD124F</td>
+		        <td>-</td>
+		        <td>Montauban</td>            
+		    </tr>
+		    
+		</table>
+
+		<div class="button">
+			<a href="#ville">Détails</a>
+			<a href="#ville">Géolocaliser</a>
+			<a href="#ville">Réserver</a>
+		</div>
+	</div>
+	<div class="liste">
+		<table>
+			<tr>
+		        <td>FD124F</td>
+		        <td>-</td>
+		        <td>Montauban</td>            
+		    </tr>
+		    
+		</table>
+
+		<div class="button">
+			<a href="#ville">Détails</a>
+			<a href="#ville">Géolocaliser</a>
+			<a href="#ville">Réserver</a>
+		</div>
+	</div>
+	<div class="liste">
+		<table>
+			<tr>
+		        <td>FD124F</td>
+		        <td>-</td>
+		        <td>Montauban</td>            
+		    </tr>
+		    
+		</table>
+
+		<div class="button">
+			<a href="#ville">Détails</a>
+			<a href="#ville">Géolocaliser</a>
+			<a href="#ville">Réserver</a>
+		</div>
+	</div>
+	<div class="liste">
+		<table>
+			<tr>
+		        <td>FD124F</td>
+		        <td>-</td>
+		        <td>Montauban</td>            
+		    </tr>
+		    
+		</table>
+
+		<div class="button">
+			<a href="#ville">Détails</a>
+			<a href="#ville">Géolocaliser</a>
+			<a href="#ville">Réserver</a>
+		</div>
+	</div>
+	<div class="liste">
+		<table>
+			<tr>
+		        <td>FD124F</td>
+		        <td>-</td>
+		        <td>Montauban</td>            
+		    </tr>
+		    
+		</table>
+
+		<div class="button">
+			<a href="#ville">Détails</a>
+			<a href="#ville">Géolocaliser</a>
+			<a href="#ville">Réserver</a>
+		</div>
+	</div>
+	<div class="liste">
+		<table>
+			<tr>
+		        <td>FD124F</td>
+		        <td>-</td>
+		        <td>Montauban</td>            
+		    </tr>
+		    
+		</table>
+
+		<div class="button">
+			<a href="#ville">Détails</a>
+			<a href="#ville">Géolocaliser</a>
+			<a href="#ville">Réserver</a>
+		</div>
+	</div>
+	<div class="liste">
+		<table>
+			<tr>
+		        <td>FD124F</td>
+		        <td>-</td>
+		        <td>Montauban</td>            
+		    </tr>
+		    
+		</table>
+
+		<div class="button">
+			<a href="#ville">Détails</a>
+			<a href="#ville">Géolocaliser</a>
+			<a href="#ville">Réserver</a>
+		</div>
+	</div>
+	<div class="liste">
+		<table>
+			<tr>
+		        <td>FD124F</td>
+		        <td>-</td>
+		        <td>Montauban</td>            
+		    </tr>
+		    
+		</table>
+
+		<div class="button">
+			<a href="#ville">Détails</a>
+			<a href="#ville">Géolocaliser</a>
+			<a href="#ville">Réserver</a>
+		</div>
+	</div>
+	<div class="liste">
+		<table>
+			<tr>
+		        <td>FD124F</td>
+		        <td>-</td>
+		        <td>Montauban</td>            
+		    </tr>
+		    
+		</table>
+
+		<div class="button">
+			<a href="#ville">Détails</a>
+			<a href="#ville">Géolocaliser</a>
+			<a href="#ville">Réserver</a>
+		</div>
+	</div>
+	<div class="liste">
+		<table>
+			<tr>
+		        <td>FD124F</td>
+		        <td>-</td>
+		        <td>Montauban</td>            
+		    </tr>
+		    
+		</table>
+
+		<div class="button">
+			<a href="#ville">Détails</a>
+			<a href="#ville">Géolocaliser</a>
+			<a href="#ville">Réserver</a>
+		</div>
+		</div>
+	</div>
+</div>
+
+<footer>
+	<hr>
+	<p>Aircraft  ©2022</p>
+	<p class="noms">Corentin Denys / Vincent Urbanski / Hugo Cools</p>
+
+</footer>
+
+</body>
+</html>
